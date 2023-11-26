@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/* src/App.css */
+body {
+  background-color: #f6f6f6;
+}
+.phone-book-app {
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.phone-book-header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  gap: 16px;
+}
+
+.phone-book-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  gap: 16px;
+}
+
+.phone-book-title {
+  font-size: 34px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-btn {
+  background-color: #347bf6;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-btn svg {
+  margin-right: 5px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  padding: 8px;
+  width: calc(100% - 45px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 35px;
+}
+
+.search-input .search-icon {
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  transform: translateY(-45%);
+  background-color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Ajustes para a cor da lupa ser preta e o background branco */
+.search-input .search-icon svg {
+  color: black;
+  background-color: #fff;
+}
+
+.phone-book-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d53e2e;
+}
+
+button svg {
+  vertical-align: middle;
 }

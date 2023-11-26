@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+<h1 style="text-align: center; font-weight: bold;">Phone Book App</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo 📸
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
+   <img src="public/.png" alt="demo-mobile" height="425">
 
-### `npm start`
+</div> 
+ ---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About the project: The project to test for a vacancy, the objective was to create a simple phone book application with CRUD operations. The application is written in Typescript. .
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Project link:
 
-### `npm test`
+### 🛠 Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### The following tools were used in building the project :
 
-### `npm run build`
+- [NEXTJS](https://nextjs.org/docs)
+- [TYPESCRIPT](https://www.typescriptlang.org/docs/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Before starting, you will need to have the following tools installed on your machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+Furthermore, it is good to have an editor to work with the code like[VSCode](https://code.visualstudio.com/)
 
-### `npm run eject`
+### Running the project🎲
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone este repositório
+$ git clone https://github.com/deniseschirmer/phone-book-crud
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no terminal/cmd
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instale as dependências
+$ yarn
+# ou
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
+# ou
+$ npm run dev
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png">
+<img src="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png" alt="LinkedIn" height="50"></a>
+<br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Made with love by: Denise Schirmer
+
+[See my linkedIn](https://www.linkedin.com/in/denise-s-lima-schirmer-9702661ba/)

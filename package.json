@@ -10,15 +10,20 @@
     "@types/node": "^16.18.65",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.6.2",
+    "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.3.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "postcss src/index.css -o src/index.css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
