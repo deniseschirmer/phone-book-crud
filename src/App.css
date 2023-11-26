@@ -25,6 +25,12 @@ body {
   gap: 16px;
 }
 
+.phone-number {
+  display: flex;
+  gap: 10px;
+  color: #a6a6a6;
+}
+
 .phone-book-title {
   font-size: 34px;
   display: flex;
@@ -36,7 +42,7 @@ body {
   background-color: #347bf6;
   color: #fff;
   border: none;
-  padding: 8px;
+  padding: 9px 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -54,8 +60,8 @@ body {
 .search-input input {
   padding: 8px;
   width: calc(100% - 45px);
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #fff;
+  border-radius: 6px;
   padding-left: 35px;
 }
 
@@ -88,10 +94,11 @@ li {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 6px;
 }
 
 button {
-  background-color: red;
+  background-color: #cb444a;
   color: #fff;
   border: none;
   padding: 8px;

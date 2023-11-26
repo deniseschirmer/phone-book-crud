@@ -5,6 +5,7 @@ import "./App.css";
 import { FaAddressBook } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { RiDeleteBin5Fill } from "react-icons/ri";
+import { RiPhoneFill } from "react-icons/ri";
 
 const API_URL = "http://localhost:5000/api/entries";
 
@@ -84,7 +85,7 @@ const App: React.FC = () => {
   return (
     <div className="phone-book-app">
       <div className="phone-book-header">
-        <FaAddressBook size={40} />
+        <FaAddressBook size={35} />
         <h1 className="phone-book-title">Phone Book App</h1>
       </div>
       <div className="phone-book-sub-header">
@@ -119,7 +120,11 @@ const App: React.FC = () => {
               <strong>
                 {entry.firstName} {entry.lastName}
               </strong>
-              <p>{entry.phoneNumber}</p>
+
+              <p className="phone-number">
+                <RiPhoneFill />
+                {entry.phoneNumber}
+              </p>
             </div>
             <button onClick={() => handleDelete(entry.id)}>
               <RiDeleteBin5Fill />

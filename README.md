@@ -9,7 +9,7 @@
 </div> 
  ---
 
-## About the project: The project to test for a vacancy, the objective was to create a simple phone book application with CRUD operations. The application is written in Typescript. .
+### About the project: The project to test for a vacancy, the objective was to create a simple phone book application with CRUD operations. The application is written in Typescript. .
 
 ### Project link:
 
