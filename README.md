@@ -28,19 +28,19 @@ Furthermore, it is good to have an editor to work with the code like[VSCode](htt
 ### Running the project🎲
 
 ```bash
-# Clone este repositório
+# Clone this repository
 $ git clone https://github.com/deniseschirmer/phone-book-crud
 
-# Acesse a pasta do projeto no terminal/cmd
+# Access the project folder in terminal/cmd
 
-# Instale as dependências
+# Install dependencies
 $ yarn
-# ou
+# or
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
+# Run the application in development mode
 $ yarn dev
-# ou
+# or
 $ npm run dev
 
 ```
