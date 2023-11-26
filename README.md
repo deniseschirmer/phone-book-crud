@@ -1,10 +1,8 @@
 <h1 style="text-align: center; font-weight: bold;">Phone Book App</h1>
 
-## Demo 📸
-
 <div align="center">
 
-   <img src="public/phone-book-video.mp4" alt="demo-mobile" height="425">
+   <img src="public/phone-book.png" alt="demo-mobile" height="425">
 
 </div> 
  ---
