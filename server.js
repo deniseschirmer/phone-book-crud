@@ -1,18 +1,43 @@
-// server.js
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-const cors = require("cors");
-app.use(cors());
-
 app.use(cors());
 app.use(bodyParser.json());
 
 let entries = [
-  // Suas entradas iniciais podem ser definidas aqui
+  {
+    id: 1,
+    firstName: "Eric",
+    lastName: "Elliot",
+    phoneNumber: "123-456-7890",
+  },
+  {
+    id: 2,
+    firstName: "Steve",
+    lastName: "Jobs",
+    phoneNumber: "987-654-3210",
+  },
+  {
+    id: 3,
+    firstName: "Fred",
+    lastName: "Allen",
+    phoneNumber: "555-123-4567",
+  },
+  {
+    id: 4,
+    firstName: "Steve",
+    lastName: "Wozniak",
+    phoneNumber: "888-999-0000",
+  },
+  {
+    id: 5,
+    firstName: "Bill",
+    lastName: "Gates",
+    phoneNumber: "777-888-9999",
+  },
 ];
 
 app.get("/api/entries", (req, res) => {

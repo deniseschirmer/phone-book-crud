@@ -24,41 +24,6 @@ const App: React.FC = () => {
     phoneNumber: "",
   });
 
-  useEffect(() => {
-    setEntries([
-      {
-        id: 1,
-        firstName: "Eric",
-        lastName: "Elliot",
-        phoneNumber: "123-456-7890",
-      },
-      {
-        id: 2,
-        firstName: "Steve",
-        lastName: "Jobs",
-        phoneNumber: "987-654-3210",
-      },
-      {
-        id: 3,
-        firstName: "Fred",
-        lastName: "Allen",
-        phoneNumber: "555-123-4567",
-      },
-      {
-        id: 4,
-        firstName: "Steve",
-        lastName: "Wozniak",
-        phoneNumber: "888-999-0000",
-      },
-      {
-        id: 5,
-        firstName: "Bill",
-        lastName: "Gates",
-        phoneNumber: "777-888-9999",
-      },
-    ]);
-  }, []);
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -78,8 +43,23 @@ const App: React.FC = () => {
   const handleDelete = (id: number) => {
     axios
       .delete(`${API_URL}/${id}`)
-      .then(() => setEntries(entries.filter((entry) => entry.id !== id)))
+      .then(() => getEntries())
       .catch((error) => console.error("Error deleting entry:", error));
+  };
+
+  useEffect(() => {
+    getEntries();
+  }, []);
+
+  const getEntries = () => {
+    axios
+      .get<Entry[]>(API_URL)
+      .then((response) => {
+        setEntries(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching contact list:", error);
+      });
   };
 
   return (
@@ -97,7 +77,7 @@ const App: React.FC = () => {
           + Add Contact
         </button>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div className="search-input">
           <input
             type="text"

@@ -4,7 +4,7 @@
 
 <div align="center">
 
-   <img src="public/.png" alt="demo-mobile" height="425">
+   <img src="public/phone-book-video.mp4" alt="demo-mobile" height="425">
 
 </div> 
  ---
