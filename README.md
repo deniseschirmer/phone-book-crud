@@ -45,6 +45,9 @@ $ npm run dev
 
 ```
 
+## Quality of the Code
+[![DeepScan grade](https://deepscan.io/api/teams/22709/projects/25974/branches/821490/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=22709&pid=25974&bid=821490)
+
 <a href="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png">
 <img src="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png" alt="LinkedIn" height="50"></a>
 <br />
